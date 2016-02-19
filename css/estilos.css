@@ -1,0 +1,280 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	background: #ff8000;
+	top:0;
+	height: 48px;
+	border-top:4px solid #df3a01;
+	border-bottom:4px solid #df3a01;
+	z-index: 2;
+}
+
+header #logo h2{
+	font-family: verdana;
+	font-size: 25px;
+	color: #fff;
+	margin: 10px 0 0 10px;
+}
+
+#abrir_menu{
+	float: right;
+	margin: -40px 10px 0 0;
+	color:  #fff;
+	font-size: 40px;
+	cursor: pointer;
+	display: none;
+}
+header #menu nav{
+	height: 45px;
+	display: none;
+
+}
+
+#cerrar_menu{
+	font-size: 40px;
+	float:  right;
+	padding: 5px;
+	color: #fff;
+	opacity: .6;
+	cursor:pointer;
+
+}
+
+#cerrar_menu:hover{
+
+	opacity:1;
+
+}
+
+header #menu{
+	width: 500px;
+	margin: -28px auto;
+    -webkit-transition: left 0.7s;
+    -moz-transition: left 0.7s;
+    -o-transition: left 0.7s;
+
+}
+
+header #menu ul a{
+	text-decoration: none;
+	color:  #fff;
+	font-variant: verdana;
+	font-size: 18px;
+	padding: 16px;
+	border:2px solid transparent;
+}
+
+header #menu ul a:hover{
+	background: #ff8000;
+	box-shadow: 2px 2px 2px #df3a01;
+	border:2px solid #df3a01;
+}
+
+#inicio{
+	width: 100%;
+	padding: 70px 0 0 0;
+	background: url(../img/fondo.png) no-repeat center;
+}
+
+#inicio img{
+	height: 400px;
+	opacity: .8;
+	margin-bottom: 30px;
+	-webkit-transition:height 0.7s;
+    -moz-transition:height 0.7s;
+    -o-transition: height 0.7s;
+}
+
+#inicio a{
+	text-decoration: none;
+	color: #fff;
+	padding: 15px;
+	border:4px solid #fff;
+	font-size: 17px;
+	font-family:  verdana;
+	border-radius: 5px;
+	font-weight: bold;
+	-webkit-transition: background 0.7s, color 0.7s;
+    -moz-transition: background 0.7s, color 0.7s;
+    -o-transition: background 0.7s, color 0.7s;
+}
+
+#inicio a:hover{
+	background: #fff;
+	color: #df3a01;
+}
+
+#acerca{
+	width: 100%;
+	background: #fff;
+}
+
+#acerca-main{
+	width: 880px;
+	margin:auto;
+	padding-bottom: 30px;
+}
+
+h3{
+	font-size: 30px;
+	font-family: verdana;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+#acerca-main h3{
+	color:#df3a01;
+}
+
+#acerca-main  p{
+	font-family: verdana;
+	opacity: 0.8;
+	color: #000;
+}
+
+#servicios{
+	width: 100%;
+	background: #ff8000;
+}
+
+#servicios-main{
+	width: 890px;
+	margin:auto;
+	padding-bottom: 30px;
+}
+
+#servicios-main h3{
+	color: #fff;
+
+}
+
+#servicios-main ul a{
+	text-decoration: none;
+	color:#fff;
+	width: 350px;
+	margin:5px;
+	border:4px solid #fff;
+	padding: 20px;
+	display: inline-block;
+	font-family: verdana;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#servicios-main ul a span{
+	float: left;
+	font-size: 40px;
+}
+
+#servicios-main ul a:hover{
+	background: #fff;
+	color: #ff8000;
+	-webkit-transition: background 0.7s, color 0.7s;
+    -moz-transition: background 0.7s, color 0.7s;
+    -o-transition: background 0.7s, 
+}
+
+#contacto{
+	width: 100%;
+	background: #fff;
+}
+
+#contacto-main{
+	width: 880px;
+	margin:auto;
+	padding-bottom: 30px;
+}
+
+#contacto-main h3{
+	color: #df3a01;
+}
+
+#contacto-main form input{
+	border:4px solid #df3a01;
+	width: 90%;
+	height: 30px;
+	border-radius: 5px;
+	margin-bottom: 6px;
+	font-family: verdana;
+	font-size: 18px;
+}
+
+#contacto-main form textarea{
+	border:4px solid #df3a01;
+	width: 90%;
+	height: 90px;
+	border-radius: 5px;
+	margin-bottom: 6px;
+	font-family: verdana;
+	font-size: 18px;
+}
+
+#boton{
+	background: #df3a01;
+	color:#fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+footer{
+	width: 100%;
+	border-top: 4px solid #df3a01;
+	border-bottom: 4px solid #df3a01;
+}
+
+#footer{
+	width: 100%;
+	background: #ff8000;
+	padding: 20px 0;
+}
+
+#footer-main{
+	width: 600px;
+}
+
+#footer-main div{
+	display: inline-block;
+	margin:10px 20px 0 20px;
+	padding: 10px;
+}
+
+#footer-main div h4{
+	font-family: verdana;
+	font-size: 20px;
+	font-weight: bold;
+	color: #df3a01;
+	padding-bottom: 10px;
+}
+
+#footer-main div ul a{
+	text-decoration: none;
+	text-align: left;
+	font-family: verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+	margin-bottom: 4px;
+}
+
+#footer-main div ul a:hover{
+	color: #df3a01;
+}
+
+#creditos{
+	width: 100%;
+	background: #df3a01;
+}
+
+#creditos h5{
+	color:#fff;
+	font-family: verdana;
+	font-size: 14px;
+	text-align: center;
+	padding: 8px;
+}

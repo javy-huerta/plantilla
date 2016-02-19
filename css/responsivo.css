@@ -1,0 +1,99 @@
+@media screen and (max-width: 900px){
+
+	header #menu{
+		height: 100%;
+		position: fixed;
+		background: #df3a01;
+		top: 0;
+		left: 100%;
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	header #menu ul a{
+		display: block;
+	}
+
+	#abrir_menu{
+		display: block;
+	}
+
+	header #menu nav{
+		display: block;
+	}
+
+	#acerca-main{
+		width: 100%;
+	}
+
+	#servicios-main{
+		width: 100%;
+	}
+
+	#contacto-main{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 620px){
+
+	#footer-main{
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width: 450px){
+
+	header #menu
+	{
+		width: 80%;
+	}
+
+	#inicio img{
+
+		height: 200px;
+	}
+
+	#servicios-main ul a{
+		width: 80%;
+		padding: 10px;
+		font-size: 18px;
+		padding: 8px;
+	}
+
+}
+
+/**
+	
+	$(document).ready(function(){
+
+		$("#inicio").css({"height":$(window).height()+"px"})
+
+		var menu=1;
+		$("#abrir_menu,#cerrar_menu").click(function(){
+			if (menu==1) {
+				$("#menu").css({"left":"0"});
+				menu=0;
+			}
+			else{
+				$("#menu").css({"left":"-100%"});
+				menu=1;
+			}
+		});
+
+	 $(function(){
+      $('a[href*=#]').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+             var $target = $(this.hash);
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+             if ($target.length) {
+                 var targetOffset = $target.offset().top;
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+                 return false;
+            }
+       }
+
+	});
+/
